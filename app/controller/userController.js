@@ -363,6 +363,7 @@ let loginFunction = (req, res) => {
                 } else {
                     tokenDetails.userId = userDetails.userId;
                     tokenDetails.userDetails = userDetails;
+                    console.log("this is token details" + tokenDetails + "  " + userDetails)
                     resolve(tokenDetails);
                 }
             });
