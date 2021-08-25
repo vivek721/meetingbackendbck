@@ -4,7 +4,7 @@ appConfig.port = 3000;
 appConfig.allowedCorsOrigin = "*";
 appConfig.env = "dev";
 appConfig.db = {
-  uri: "mongodb://127.0.0.1:27017/MeetingPlannerDB"
+  uri: "mongodb+srv://user:takemetochurch@cluster0.akm7k.mongodb.net/meeting?retryWrites=true&w=majority"
 };
 appConfig.apiVersion = "/api/v1";
 
