@@ -10,10 +10,12 @@ const logger = require("./app/libs/loggerLib");
 const routeLoggerMiddleware = require("./app/middlewares/routeLogger.js");
 const globalErrorMiddleware = require("./app/middlewares/appErrorHandler");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const morgan = require("morgan");
 
 /* middlewares */
 app.use(morgan("dev"));
+app.use(cors({origin: "*"}));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
